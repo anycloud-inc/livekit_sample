@@ -273,7 +273,7 @@ class CallService {
 
       // LiveKitのトークン発行
       final response = await http.get(Uri.parse(
-          '${dotenv.env['CLOUD_FUNCTIONS_URL']}/createToken?userId=$_userId&roomId=$_currentCallId'));
+          'https://createtoken-kisymtmowq-an.a.run.app/createToken?userId=$_userId&roomId=$_currentCallId'));
       final token = response.body.trim();
       _audioTrack ??= await LocalAudioTrack.create(
         const AudioCaptureOptions(),
@@ -351,7 +351,7 @@ class CallService {
     final toIOS = Platform.isIOS ? 0 : 1;
     final q =
         '?callId=$_currentCallId&callerUserId=$_userId&isCall=1&toIOS=$toIOS';
-    final url = '${dotenv.env['CLOUD_FUNCTIONS_URL']}/sendMessage$q';
+    final url = 'https://sendmessage-kisymtmowq-an.a.run.app/sendMessage$q';
     await http.get(Uri.parse(url));
   }
 }

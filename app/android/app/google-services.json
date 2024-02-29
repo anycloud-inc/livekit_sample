@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "788249909527",
+    "project_id": "livekit-sample-28975",
+    "storage_bucket": "livekit-sample-28975.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788249909527:android:de96836e576f99bee0ff52",
+        "android_client_info": {
+          "package_name": "jp.co.anycloud.livekitsample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqX33HlprcjpaaJebNLqOU1JTfG_RJBF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
